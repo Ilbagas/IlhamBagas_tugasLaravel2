@@ -12,5 +12,5 @@ Route::post('/login', [loginController::class, 'login']);
 
 Route::post('/logout', function () {
     Auth::logout();
-    return redirect()->route('login'); // Menggunakan named route
+    return redirect()->route('login'); 
 })->name('logout');
